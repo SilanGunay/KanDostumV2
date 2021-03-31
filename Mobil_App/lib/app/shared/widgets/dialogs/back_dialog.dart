@@ -12,14 +12,14 @@ class BackDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       title: new Text(title),
-      content: new Text('Ayrılmak istediğinizden emin misiniz '+msg.toLowerCase()+'?'),
+      content: new Text('Are you sure you want to leave'+msg.toLowerCase()+'?'),
       actions: <Widget>[
         FlatButton(
-          child: Text('Hayır'),
+          child: Text('No'),
           onPressed: onConfirm,
         ),
         FlatButton(
-          child: Text('Evet'),
+          child: Text('Yes'),
           onPressed: onCancel,
         ),
       ],
