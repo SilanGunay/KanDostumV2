@@ -36,7 +36,7 @@ class LocationCard extends StatelessWidget {
                 ),
                 _buildButton(
                   visible: location.phone != null,
-                  label: 'Ara',
+                  label: 'Call',
                   icon: Icons.call,
                   onPressed: () {
                     ServicesHelper.call(location.phone);
@@ -44,7 +44,7 @@ class LocationCard extends StatelessWidget {
                 ),
                 _buildButton(
                   visible: location.address != null,
-                  label: 'Adres',
+                  label: 'Address',
                   icon: Icons.directions,
                   onPressed: () {
                     ServicesHelper.directions(
