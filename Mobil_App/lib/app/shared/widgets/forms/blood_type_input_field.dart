@@ -92,7 +92,7 @@ class _BloodTypeInputFieldState extends State<BloodTypeInputField> {
                 SizedBox(height: 10),
                 Row(
                   children: <Widget>[
-                    _button('Bilmiyorum', state: state),
+                    _button('I do not know', state: state),
                   ],
                 ),
               ],
@@ -102,14 +102,14 @@ class _BloodTypeInputFieldState extends State<BloodTypeInputField> {
       ),
       actions: <Widget>[
         FlatButton(
-          child: Text('İptal et'),
+          child: Text('Cancel'),
           onPressed: () {
             _itemSelected = widget.controller.text;
             Navigator.pop(context);
           },
         ),
         FlatButton(
-          child: Text('Tamam'),
+          child: Text('Confirm'),
           onPressed: () {
             if (_itemSelected.isNotEmpty) {
               widget.controller.text = _itemSelected;
