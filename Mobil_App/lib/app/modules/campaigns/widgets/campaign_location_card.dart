@@ -31,13 +31,13 @@ class CampaignLocationCard extends StatelessWidget {
               children: <Widget>[
                 _buildButton(
                   visible: true,
-                  label: 'Paylaş',
+                  label: 'Share',
                   icon: Icons.share,
                   onPressed: onShare,
                 ),
                 _buildButton(
                   visible: true,
-                  label: 'Bağış Yap',
+                  label: 'Donate',
                   icon: Icons.favorite,
                   onPressed: onDonation,
                 ),
