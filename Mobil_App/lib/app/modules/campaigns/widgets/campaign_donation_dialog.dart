@@ -29,18 +29,18 @@ class CampaignDonationDialog {
 
   static _successDialog(BuildContext context, Function onConfirm) {
     return AlertDialog(
-      title: new Text('Bağış yap!'),
+      title: new Text('Donate!'),
       content: new Text(
-          'Onayla düğmesine tıklayarak bağış yaptığınızı onaylarsınız. Gerçekten bağışta bulunduysan lütfen onayla butonuna tıkla.'),
+          'By clicking the Confirm button, you confirm your donation. If you really donated, please click the confirm button.'),
       actions: <Widget>[
         FlatButton(
-          child: Text('İptal et'),
+          child: Text('Cancel'),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
         FlatButton(
-          child: Text('Onayla'),
+          child: Text('Confirm'),
           onPressed: () {
             Navigator.pop(context);
             onConfirm();
@@ -53,12 +53,12 @@ class CampaignDonationDialog {
   static _wrongDialog(BuildContext context, int days) {
 
     return AlertDialog(
-      title: new Text('Bağış yapmaya izin verilmiyor!'),
+      title: new Text('Donations are not allowed!'),
       content: new Text(
-          'Maalesef şu anda bağış yapamazsınız, Tekrar bağışta bulunmanız için $days kaldı.'),
+          'Sorry, you can not donate right now, $days left to donate again.'),
       actions: <Widget>[
         FlatButton(
-          child: Text('Tamam'),
+          child: Text('Complete'),
           onPressed: () {
             Navigator.pop(context);
           },
