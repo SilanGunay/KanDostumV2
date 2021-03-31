@@ -19,7 +19,7 @@ class _HbrKartState extends State<HbrKart> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Web Kan İstekleri'
+          'Web Blood Requests'
         ),
         automaticallyImplyLeading: true,
       ),
@@ -60,7 +60,7 @@ class _HbrKartState extends State<HbrKart> {
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),
                             child: Text(
-                              'Kullanıcının Mesajı: $mesaj',
+                              ' Message of User: $mesaj',
                               style: TextStyle(
                                 color: Colors.white
                               ),
@@ -115,7 +115,7 @@ class _HbrKartState extends State<HbrKart> {
                                         Icon(Icons.call, color: Colors.red,),
                                         SizedBox(width: 5,),
                                         Text(
-                                          'Ara: $telefonNu',
+                                          'Call: $telefonNu',
                                           style: TextStyle(
                                             color: Colors.red
                                           ),
@@ -159,7 +159,7 @@ class _HbrKartState extends State<HbrKart> {
               } else {
                 return Center(
                   child: Text(
-                    'Kan İsteği Boş!'
+                    'Blood Request Is Empty!'
                   ),
                 );
               }
