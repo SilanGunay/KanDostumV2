@@ -67,11 +67,11 @@ class _GenderInputFieldState extends State<GenderInputField> {
               children: <Widget>[
                 SizedBox(height: 10),
                 Row(
-                  children: <Widget>[_button('Erkek', state: state)],
+                  children: <Widget>[_button('Male', state: state)],
                 ),
                 SizedBox(height: 10),
                 Row(
-                  children: <Widget>[_button('Kadın', state: state)],
+                  children: <Widget>[_button('Female', state: state)],
                 ),
               ],
             );
@@ -80,14 +80,14 @@ class _GenderInputFieldState extends State<GenderInputField> {
       ),
       actions: <Widget>[
         FlatButton(
-          child: Text('İptal et'),
+          child: Text('Cancel'),
           onPressed: () {
             _itemSelected = widget.controller.text;
             Navigator.pop(context);
           },
         ),
         FlatButton(
-          child: Text('Tamam'),
+          child: Text('Confirm'),
           onPressed: () {
             if (_itemSelected.isNotEmpty) {
               widget.controller.text = _itemSelected;
