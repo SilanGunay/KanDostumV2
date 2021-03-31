@@ -6,9 +6,9 @@ import 'package:social_share/social_share.dart';
 
 class CampaignBottomSheet {
   static final hashtags = [
-    'kan bağışı',
-    'hayat kurtarmak',
-    'kan',
+    'blood donation',
+    'to save a life',
+    'blood',
     'kan dostum'
   ];
   static final urlAPP =
@@ -27,7 +27,7 @@ class CampaignBottomSheet {
             children: <Widget>[
               new ListTile(
                 leading: new Icon(FontAwesomeIcons.copy),
-                title: new Text('Kopyala'),
+                title: new Text('Copy'),
                 onTap: () {
                   Navigator.pop(context);
                   SocialShare.copyToClipboard(text);
