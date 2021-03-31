@@ -10,7 +10,7 @@ class SubmitButton extends StatelessWidget {
 
   const SubmitButton({
     Key key,
-    this.label = 'Giriş Yap',
+    this.label = 'Login',
     this.icon,
     this.busy = false,
     @required this.firstColor,
