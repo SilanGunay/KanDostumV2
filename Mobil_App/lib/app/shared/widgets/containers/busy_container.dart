@@ -13,7 +13,7 @@ class BusyContainer extends StatelessWidget {
     Key key,
     @required this.busy,
     @required this.child,
-    this.message = 'Boş',
+    this.message = 'Null',
     this.icon,
     this.length,
   }) : super(key: key);
