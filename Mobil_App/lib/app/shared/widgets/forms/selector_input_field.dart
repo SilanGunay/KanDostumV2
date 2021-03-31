@@ -77,14 +77,14 @@ class _SelectorInputFieldState extends State<SelectorInputField> {
           ),
           actions: <Widget>[
             FlatButton(
-              child: Text('İptal et'),
+              child: Text('Cancel'),
               onPressed: () {
                 _itemSelected = widget.controller.text;
                 Navigator.pop(context);
               },
             ),
             FlatButton(
-              child: Text('Tamam'),
+              child: Text('Confirm'),
               onPressed: () {
                 if (_itemSelected.isNotEmpty) {
                   widget.controller.text = _itemSelected;
