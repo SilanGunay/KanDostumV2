@@ -32,8 +32,8 @@ class _PhotoBoxState extends State<PhotoBox> {
         onSuccess: (pictureUrl) {
           SnackBarHelper.showSuccessMessage(
             context,
-            title: 'Başarılı',
-            message: 'Resim yükleme tamamlandı.',
+            title: 'Success',
+            message: 'Image upload complete.',
           );
 
           setState(() {
@@ -57,7 +57,7 @@ class _PhotoBoxState extends State<PhotoBox> {
               new ListTile(
                 enabled: !widget.busy,
                 leading: new Icon(Icons.camera_alt),
-                title: new Text('Kamera'),
+                title: new Text('Camera'),
                 onTap: () {
                   Navigator.pop(context);
                   _changeImage(true);
@@ -65,7 +65,7 @@ class _PhotoBoxState extends State<PhotoBox> {
               ),
               new ListTile(
                 leading: new Icon(Icons.image),
-                title: new Text('Galeri'),
+                title: new Text('Gallery'),
                 onTap: () {
                   Navigator.pop(context);
                   _changeImage(false);
@@ -96,7 +96,7 @@ class _PhotoBoxState extends State<PhotoBox> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Center(
-              child: _image == null ? Text('Fotoğraf Yok.') : Image.file(_image),
+              child: _image == null ? Text('Photo does not exist.') : Image.file(_image),
             ),
           ),
         ),
