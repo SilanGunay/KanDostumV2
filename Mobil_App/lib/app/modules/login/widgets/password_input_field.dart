@@ -11,7 +11,7 @@ class PasswordInputField extends StatefulWidget {
 
   const PasswordInputField({
     Key key,
-    this.label = 'Parola',
+    this.label = 'Password',
     this.onSaved,
     this.busy = false,
     this.forgetPassword = false,
@@ -64,7 +64,7 @@ class _PasswordInputFieldState extends State<PasswordInputField> {
               child: InkWell(
                 onTap: widget.onTap,
                 child: Text(
-                  'Parolanızı mı unuttunuz ?',
+                  'Forgot password?',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
